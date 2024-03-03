@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 
-export default class BibleRoute extends Route {
+export default class BibleIndexRoute extends Route {
   // Reset fields when entering and leaving the Bible route such that the
   // previous visits to this route won't affect the result.
   setupController (controller) {

@@ -1,0 +1,33 @@
+<!-- Top Bar across all Routes -->
+<header>
+  <MdcTopAppBar>
+    <MdcTopAppBarRow>
+      <MdcTopAppBarSection @position="alignStart">
+        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+                aria-label="Open navigation menu"
+                type="button"
+          {{on "click" this.toHome}}>home</button>
+        <span class="mdc-top-app-bar__title">Translit</span>
+      </MdcTopAppBarSection>
+
+
+      <!-- TODO: delete, if not implemented. -->
+      <MdcTopAppBarSection @position="alignEnd">
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search" type="button" {{on "click" this.toBible}}>search</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite" type="button">favorite</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options" type="button" {{on "click" this.toAccount}}>person</button>
+      </MdcTopAppBarSection>
+    </MdcTopAppBarRow>
+  </MdcTopAppBar>
+</header>
+
+
+<!-- Content Yielding from the top-bar component-->
+<div {{mdc-top-app-bar-fixed-adjustment dense=this.dense
+                                        short=this.short
+                                        prominent=this.prominent
+                                        alwaysCollapsed=this.alwaysCollapsed}}
+      class="mdc-menu-surface--anchor">
+  {{yield}}
+</div>
+

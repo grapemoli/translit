@@ -1,0 +1,22 @@
+{{page-title "Bible"}}
+
+<TopBar></TopBar>
+
+<title>Search</title>
+<!-- Searching form -->
+<div align="center" padding="5%">
+
+  <br><br><br><br><br>
+
+  <MdcForm>
+    <MdcFormField alignEnd={{true}} @label="Search" @submit={{this.submit}} @reset={{this.reset}}>
+      <MdcTextfield type="text" @label="Search for a verse..." @style="filled" @value={{this.textInput}}></MdcTextfield>
+    </MdcFormField>
+
+    <MdcFormField>
+      <MdcButton @type="submit" @label="Search" {{on "click" this.submit}}>Search</MdcButton>
+    </MdcFormField>
+
+  </MdcForm>
+</div>
+

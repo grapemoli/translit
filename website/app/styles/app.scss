@@ -1,1 +1,69 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+@use "@material/fab" as fab;  // For toggling fab buttons.
+@import "app-theme";          // Color Scheme.
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: auto;
+
+  // This is the default padding on the body to account for the "status bar" on
+  // iOS devices. On non-iOS devices, this value will be 0.
+  padding-top: env(safe-area-inset-top);
+}
+
+// For Route: account/create
+.change-password-container {
+  margin: 75px auto 0;
+  width: 90%;
+}
+
+// For Route: account/index
+.account-options-container {
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+
+  .mdc-fab {
+    display: flex;
+    position: relative;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    right: 0;
+    bottom: 0;
+
+    &--true {
+      @include fab.container-color (secondary);
+    }
+
+    &--false {
+      @include fab.container-color (on-secondary);
+      @include fab.ink-color (secondary);
+    }
+  }
+}
+
+.accountForm {
+  padding: 5%;
+
+  .mdc-text-field {
+    padding: 5%;
+  }
+
+  .mdc-password-text-field {
+    padding: 5%;
+  }
+
+  .password {
+    position: relative;
+    width: 75%;
+  }
+
+  .username {
+    position: relative;
+    width: 200%;
+  }
+}
+
