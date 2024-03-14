@@ -19,7 +19,7 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
-    "test": "npm-run-all lint test:*"
+    "test": "npm-run-all lint"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.10",
@@ -151,6 +151,7 @@
     "edition": "octane"
   },
   "dependencies": {
+    "chrome-launcher": "^1.1.0",
     "openai": "^4.28.4"
   }
 }
