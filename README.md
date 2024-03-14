@@ -1,11 +1,11 @@
 # Translit
 
 # Installation
-**ember.js:** v3.28.0 
+**ember.js:** v3.28.0
 
 **ember-cli:** v3.28.0
 
-**node.js:** v16 [!!]
+**node.js:** v18 [!!]
 
 1. Go to ```website``` and run ```npm install``` to install all dependencies.
 

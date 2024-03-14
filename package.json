@@ -30,7 +30,7 @@
     "@capacitor/ios": "^4.8.0",
     "@capacitor/push-notifications": "^4.1.2",
     "@ember/optional-features": "^2.0.0",
-    "@ember/render-modifiers": "^1.0.2",
+    "@ember/render-modifiers": "^2.1.0",
     "@ember/test-helpers": "^2.6.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
@@ -54,6 +54,7 @@
     "broccoli-asset-rev": "^3.0.0",
     "ember-api-actions": "^0.2.9",
     "ember-auto-import": "^1.12.2",
+    "ember-blueprint-data": "^1.1.1",
     "ember-cli": "~3.28.5",
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-babel": "^7.26.10",
@@ -61,6 +62,7 @@
     "ember-cli-custom-properties": "^2.0.2",
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-gatekeeper": "^1.16.14",
+    "ember-cli-google-recaptcha": "^2.8.0",
     "ember-cli-htmlbars": "^5.7.2",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-localforage": "^2.0.6",
@@ -142,7 +144,7 @@
     "socket.io": "^4.6.1"
   },
   "engines": {
-    "node": "12.* || 14.* || >= 16"
+    "node": ">=18"
   },
   "ember": {
     "edition": "octane"
