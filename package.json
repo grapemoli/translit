@@ -20,7 +20,6 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
-    "test:ember": "ember test"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.10",
