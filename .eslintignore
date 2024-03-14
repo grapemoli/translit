@@ -17,3 +17,4 @@
 
 # eslint files
 /app/
+.eslintrc.js

@@ -23,10 +23,10 @@ module.exports = {
     browser: true,
   },
   rules: {
-    "space-before-function-paren": ["error", {
-      "anonymous": "ignore",
-      "named": "ignore",
-      "asyncArrow": "ignore"
+    'space-before-function-paren': ['error', {
+      'anonymous': 'ignore',
+      'named': 'ignore',
+      'asyncArrow': 'ignore'
     }],
   },
   overrides: [
