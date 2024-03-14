@@ -7,13 +7,13 @@
 
   <br><br><br><br><br>
 
-  <MdcForm @submit={{this.submit}} @reset={{this.reset}}>
+  <MdcForm>
     <MdcFormField alignEnd={{true}} @label="Search">
       <MdcTextfield type="text" @label="Search for a verse..." @style="filled" @value={{this.textInput}}></MdcTextfield>
     </MdcFormField>
 
     <MdcFormField>
-      <MdcButton @type="submit" @label="Search">Search</MdcButton>
+      <MdcButton @type="submit" @label="Search" {{on "click" this.submit}}>Search</MdcButton>
     </MdcFormField>
 
   </MdcForm>
