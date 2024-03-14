@@ -23,6 +23,7 @@
     "test:ember": "ember test"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.23.10",
     "@capacitor/android": "^4.8.0",
     "@capacitor/app": "^4.1.1",
     "@capacitor/cli": "^4.8.0",
