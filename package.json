@@ -4,10 +4,10 @@
   "private": true,
   "description": "Small description for website goes here",
   "repository": "",
-  "license": "MIT",
+  "license": "",
   "author": "",
   "directories": {
-    "doc": "doc",
+    "app": "app",
     "test": "tests"
   },
   "scripts": {
@@ -19,7 +19,7 @@
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
-    "test": "npm-run-all lint test:*",
+    "test": "npm-run-all lint test:*"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.10",
