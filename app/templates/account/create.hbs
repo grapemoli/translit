@@ -5,7 +5,6 @@
 <div class="change-password-container" align="center">
   <h5>Create an Account</h5>
 
-  <!-- Form fields for username, password, and email. -->
   <MdcTextfield @style="outlined" required="true" placeholder="Username" @value={{this.username}} {{on "change" this.check}} rows="1"/>
   <br>
   <MdcTextfield @style="outlined" type="email" required="true" placeholder="Email" @value={{this.email}} {{on "change" this.check}} rows="1"/>
@@ -19,13 +18,11 @@
   <MdcPasswordTextfield @style="outlined" required="true" placeholder="Confirm Password" @value={{this.password2}} {{on "change" this.check}} rows="1"/>
 
 
-  <!-- This error message prints problems relating to passwords/emails/usernames. -->
   {{#if this.errorPresent}}
     <p class="error-message">{{this.errorMessage}}</p>
   {{/if}}
 
 
-  <!-- Submit button. -->
   <br><br>
   <MdcButton @style="unelevated" {{on 'click' this.create}} disabled={{not this.valid}}>
     Create Account

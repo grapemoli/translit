@@ -144,7 +144,7 @@
     "socket.io": "^4.6.1"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=16"
   },
   "ember": {
     "edition": "octane"

@@ -3,13 +3,12 @@
 
 <div>
   <MdcList @twoLine="true">
-    <!-- Username -->
+
     <MdcListItem>
       <MdcListItemText>
         <MdcListItemPrimaryText>Username</MdcListItemPrimaryText>
 
-        <!-- TODO: change to - {{if @model.handle @model.displayHandle
-                                    "(nothing has been set)"}}-->
+
         <MdcListItemSecondaryText>Not signed in</MdcListItemSecondaryText>
       </MdcListItemText>
 
@@ -17,11 +16,9 @@
         {{on "click" (fn this.edit (hash title="Edit username" label="Username" propertyName="username"))}}/>
     </MdcListItem>
 
-    <!-- Email Address -->
     <MdcListItem>
       <MdcListItemText>
         <MdcListItemPrimaryText>Email address</MdcListItemPrimaryText>
-        <!-- TODO: change to @model.email -->
         <MdcListItemSecondaryText>Not signed in yet.</MdcListItemSecondaryText>
       </MdcListItemText>
     </MdcListItem>
@@ -30,7 +27,6 @@
     <MdcListDivider/>
 
 
-    <!-- Password -->
     <MdcListItemLinkTo @route="account.password">
       <MdcListItemText>
         <MdcListItemPrimaryText>Change password</MdcListItemPrimaryText>
@@ -38,7 +34,6 @@
       </MdcListItemText>
     </MdcListItemLinkTo>
 
-    <!-- Sign out -->
     <MdcListItem {{on "click" this.signOut}}>
       <MdcListItemText>
         <MdcListItemPrimaryText>Sign out</MdcListItemPrimaryText>
@@ -49,7 +44,6 @@
   </MdcList>
 </div>
 
-<!-- Popup form for changing the username. -->
 <MdcDialog
     @title={{this.editDialogTitle}}
     @open={{this.openEditDialog}}
@@ -59,11 +53,8 @@
   <MdcTextfield @style="outlined" @value={{this.currentValue}}/>
 </MdcDialog>
 
-<!-- This floating button will only appear if the user is not signed in -->
 {{#if this.username}}
-  <!-- Do nothing different. -->
 {{else}}
-  <!-- Give the user the option to login or create an account. -->
   <div class="account-options-container">
     <MdcFab @icon="add" @label="Create" {{on "click" this.toCreate}}/>
     <MdcFab @icon="login" @label="Sign in" {{on "click" this.toLogin}}/>

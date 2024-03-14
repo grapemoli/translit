@@ -4,20 +4,17 @@
 <div class="change-password-container" align="center">
   <h5>Sign In</h5>
 
-  <!-- Form fields for username and password. -->
   <MdcPasswordTextfield @style="outlined" required="true" placeholder="Username or Email" @value={{this.username}} {{on "change" this.check}} rows="1"/>
   <br>
   <MdcPasswordTextfield @style="outlined" required="true" placeholder="Password" @value={{this.password}} {{on "change" this.check}} rows="1"/>
   <br>
 
 
-  <!-- This error message prints problems relating to wrong password/username. -->
   {{#if this.errorPresent}}
     <p class="error-message">{{this.errorMessage}}</p>
   {{/if}}
 
 
-  <!-- Submit button. -->
   <br><br>
   <MdcButton @style="unelevated" {{on 'click' this.login}} disabled={{not this.valid}}>
     Login
