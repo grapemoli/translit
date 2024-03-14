@@ -12,9 +12,11 @@ Router.map(function () {
     this.route ('translate');
     this.route ('saved');
   });
-  this.route('account', function() {
-    this.route('create');
-    this.route('password');
-    this.route('login');
+  this.route ('account', function() {
+    this.route ('create');
+    this.route ('password');
+    this.route ('login');
+  });
+  this.route ('saved', function() {
   });
 });

@@ -11,10 +11,9 @@
       </MdcTopAppBarSection>
 
 
-      <!-- TODO: delete, if not implemented. -->
       <MdcTopAppBarSection @position="alignEnd">
         <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search" type="button" {{on "click" this.toBible}}>search</button>
-        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite" type="button">favorite</button>
+        <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite" type="button" {{on "click" this.toSaved}}>favorite</button>
         <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options" type="button" {{on "click" this.toAccount}}>person</button>
       </MdcTopAppBarSection>
     </MdcTopAppBarRow>

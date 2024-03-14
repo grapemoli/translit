@@ -29,4 +29,9 @@ export default class TopBarComponent extends Component {
   toBible () {
     this.router.transitionTo ('bible');
   }
+
+  @action
+  toSaved () {
+    this.router.transitionTo ('saved');
+  }
 }
