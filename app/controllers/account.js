@@ -1,10 +1,11 @@
 import Controller from '@ember/controller';
-import {action} from '@ember/object';
-import {tracked} from '@glimmer/tracking';
+import { action } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
+import _ from 'lodash';
 
 export default class AccountController extends Controller {
   @tracked
-  username = "";
+  username = '';
 
   @tracked
   openEditDialog;
@@ -71,6 +72,6 @@ export default class AccountController extends Controller {
       this.snackbar.showError (err);
     }
      */
-    console.log ("signed out was clicked");
+    console.log ('signed out was clicked');
   }
 }

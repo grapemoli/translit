@@ -1,14 +1,14 @@
 import Controller from '@ember/controller';
-import {action} from '@ember/object';
-import {tracked} from '@glimmer/tracking';
-import {inject as service} from '@ember/service';
+import { action } from '@ember/object';
+import { tracked } from '@glimmer/tracking';
+import { inject as service } from '@ember/service';
 
 export default class AccountIndexController extends Controller {
   @service
   router;
 
   @tracked
-  username = "";
+  username = '';
 
   @tracked
   openEditDialog;
@@ -76,16 +76,16 @@ export default class AccountIndexController extends Controller {
       this.snackbar.showError (err);
     }
      */
-    console.log ("signed out was clicked");
+    console.log ('signed out was clicked');
   }
 
   @action
   toCreate () {
-    this.router.transitionTo ("account.create");
+    this.router.transitionTo ('account.create');
   }
 
   @action
   toLogin () {
-    this.router.transitionTo ("account.login");
+    this.router.transitionTo ('account.login');
   }
 }

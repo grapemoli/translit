@@ -1,7 +1,7 @@
 import Controller from '@ember/controller';
-import {tracked} from '@glimmer/tracking';
-import {action} from '@ember/object';
-import {inject as service} from '@ember/service';
+import { tracked } from '@glimmer/tracking';
+import { action } from '@ember/object';
+import { inject as service } from '@ember/service';
 
 export default class AccountCreateController extends Controller {
   @service
@@ -53,7 +53,7 @@ export default class AccountCreateController extends Controller {
         }
         // Unmatching passwords--not valid.
         else {
-          this.errorMessage = "Passwords don't match."
+          this.errorMessage = 'Passwords do not match.';
           this.errorPresent = true;
         }
       }
@@ -64,8 +64,8 @@ export default class AccountCreateController extends Controller {
   @action
   create () {
     // TODO: implement creating an account.
-    console.log ("Created an account.")
-    this.router.transitionTo ("main");
+    console.log ('Created an account.')
+    this.router.transitionTo ('main');
 
     // TODO: If failed to log in, print the reason why.
 
