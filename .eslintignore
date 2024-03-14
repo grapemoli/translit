@@ -11,3 +11,9 @@
 
 # ember-try
 /.node_modules.ember-try/
+
+# test folder
+/tests/
+
+# eslint files
+/app/

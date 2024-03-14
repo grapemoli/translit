@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-import {tracked} from "@glimmer/tracking";
+import { tracked } from "@glimmer/tracking";
 
 export default class AccountPasswordRoute extends Route {
   // Reset fields when entering and leaving the Bible route such that the
@@ -7,9 +7,9 @@ export default class AccountPasswordRoute extends Route {
   setupController (controller) {
     super.setupController (...arguments);
 
-    controller.password1 = "";
-    controller.password2 = "";
-    controller.errorMessage = "";
+    controller.password1 = '';
+    controller.password2 = '';
+    controller.errorMessage = '';
     controller.errorPresent = false;
     controller.validPasswords = false;
   }
@@ -18,9 +18,9 @@ export default class AccountPasswordRoute extends Route {
     super.resetController (...arguments);
 
     if (isExiting) {
-      controller.password1 = "";
-      controller.password2 = "";
-      controller.errorMessage = "";
+      controller.password1 = '';
+      controller.password2 = '';
+      controller.errorMessage = '';
       controller.errorPresent = false;
       controller.validPasswords = false;
     }

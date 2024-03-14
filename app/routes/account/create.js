@@ -6,11 +6,11 @@ export default class AccountCreateRoute extends Route {
   setupController (controller) {
     super.setupController (...arguments);
 
-    controller.email = "";
-    controller.username = "";
-    controller.password1 = "";
-    controller.password2 = "";
-    controller.errorMessage = "";
+    controller.email = '';
+    controller.username = '';
+    controller.password1 = '';
+    controller.password2 = '';
+    controller.errorMessage = '';
     controller.errorPresent = false;
   }
 
@@ -18,11 +18,11 @@ export default class AccountCreateRoute extends Route {
     super.resetController (...arguments);
 
     if (isExiting) {
-      controller.email = "";
-      controller.username = "";
-      controller.password1 = "";
-      controller.password2 = "";
-      controller.errorMessage = "";
+      controller.email = '';
+      controller.username = '';
+      controller.password1 = '';
+      controller.password2 = '';
+      controller.errorMessage = '';
       controller.errorPresent = false;
     }
   }

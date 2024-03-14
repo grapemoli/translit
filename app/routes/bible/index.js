@@ -6,14 +6,14 @@ export default class BibleIndexRoute extends Route {
   setupController (controller) {
     super.setupController (...arguments);
 
-    controller.textInput = "";
+    controller.textInput = '';
   }
 
   resetController (controller, isExiting) {
     super.resetController (...arguments);
 
     if (isExiting) {
-      controller.textInput = "";
+      controller.textInput = '';
     }
   }
 }

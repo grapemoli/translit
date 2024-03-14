@@ -6,9 +6,9 @@ export default class AccountLoginRoute extends Route {
   setupController (controller) {
     super.setupController (...arguments);
 
-    controller.username = "";
-    controller.password = "";
-    controller.errorMessage = "";
+    controller.username = '';
+    controller.password = '';
+    controller.errorMessage = '';
     controller.errorPresent = false;
   }
 
@@ -16,9 +16,9 @@ export default class AccountLoginRoute extends Route {
     super.resetController (...arguments);
 
     if (isExiting) {
-      controller.username = "";
-      controller.password = "";
-      controller.errorMessage = "";
+      controller.username = '';
+      controller.password = '';
+      controller.errorMessage = '';
       controller.errorPresent = false;
     }
   }
